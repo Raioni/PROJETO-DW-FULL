@@ -96,27 +96,3 @@ const app = express();
 
 })();
 
-// async function login() {
-//   app.post('/signin', async (req, res) => {
-  
-//     const { email, password } = req.body;
-  
-//     const { id: userId, password: hash } = await User.readByEmail(email);
-  
-  
-//     const match = await bcrypt.compare(password, hash);
-  
-//     if (match) {
-//       const token = jwt.sign({ userId }, process.env.SECRET, {
-//         expiresIn: 300 // 5min
-//     });
-  
-//     res.json({ auth: true, token });
-  
-//     };
-//   });
-
-// }
-
-// login()
-
